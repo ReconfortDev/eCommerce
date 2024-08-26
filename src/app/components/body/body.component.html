@@ -1,0 +1,11 @@
+<div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div *ngFor="let product of (products$ | async)" class="w-full">
+    <app-product-card
+      [product]="product"
+      [cartQuantity]="getQuantity(product.id)"
+      (addToCart)="addToCart(product.id)"
+      (increaseQuantity)="increaseQuantity(product.id)"
+      (decreaseQuantity)="decreaseQuantity(product.id)">
+    </app-product-card>
+  </div>
+</div>

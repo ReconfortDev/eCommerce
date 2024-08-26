@@ -1,0 +1,40 @@
+<div class="w-full group">
+  <img [src]="'/assets/images/' + product.lgImage + '.jpg'" alt="{{product.title}}" height="480" width="502"
+       class="w-full rounded-3xl hidden md:block border-2 border-transparent"
+      [ngClass]="cartQuantity > 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
+  />
+  <img [src]="'/assets/images/' + product.smImage + '.jpg'" alt="{{product.title}}" height="424" width="654"
+       class="w-full rounded-3xl block md:hidden border-2 border-transparent"
+       [ngClass]="cartQuantity > 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
+  />
+  <fieldset class="w-full text-center -mt-6 relative z-10">
+
+    <legend>
+      <ng-container *ngIf="cartQuantity === 0; else showQuantity">
+        <button (click)="onAddToCart()" class="flex gap-2 items-center px-4 py-3 rounded-full border border-[#AD8A85] bg-white group-hover:shadow-xl duration-75 scale-90 group-hover:scale-100 active:scale-75">
+          <img src="/assets/images/icon-add-to-cart.svg" alt="Add to cart" class="h-5 w-5 rounded-3xl"/>
+          <p class="font-medium text-xs">Add to cart</p>
+        </button>
+      </ng-container>
+
+      <ng-template #showQuantity>
+        <div class="flex gap-2 p-2 bg-[#C73B0F] rounded-full justify-between items-center duration-75 scale-90 group-hover:scale-100">
+          <button (click)="onDecreaseQuantity()" class="p-2 border border-white rounded-full scale-90 duration-75 cursor-pointer active:scale-75">
+            <img src="/assets/images/icon-decrement-quantity.svg" alt="Decrease quantity" class="h-3 w-3 rounded-3xl"/>
+          </button>
+          <h1 class="text-white text-lg px-4">{{ cartQuantity }}</h1>
+          <button (click)="onIncreaseQuantity()" class="p-2 border border-white rounded-full scale-90 duration-75 cursor-pointer active:scale-75">
+            <img src="/assets/images/icon-increment-quantity.svg" alt="Increase quantity" class="h-3 w-3 rounded-3xl"/>
+          </button>
+        </div>
+      </ng-template>
+    </legend>
+
+
+    <div class="text-left mt-2">
+      <p class="text-sm">{{ product.title }}</p>
+      <h3 class="font-bold">{{ product.details }}</h3>
+      <h4 class="font-semibold text-[#C73B0F]">${{ product.price }}</h4>
+    </div>
+  </fieldset>
+</div>

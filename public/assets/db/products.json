@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "lgImage": "image-waffle-desktop",
+    "smImage": "image-waffle-mobile",
+    "title": "Waffle",
+    "details": "Waffles with Berries",
+    "price": 6.5
+  },
+  {
+    "id": 2,
+    "lgImage": "image-creme-brulee-desktop",
+    "smImage": "image-creme-brulee-mobile",
+    "title": "Crème Brûlée",
+    "details": "Vanilla Bean Crème Brûlée",
+    "price": 7
+  },
+  {
+    "id": 3,
+    "lgImage": "image-macaron-desktop",
+    "smImage": "image-macaron-mobile",
+    "title": "Macaron",
+    "details": "Macaron Mix of Five",
+    "price": 8
+  },
+  {
+    "id": 4,
+    "lgImage": "image-tiramisu-desktop",
+    "smImage": "image-tiramisu-mobile",
+    "title": "Tiramisu",
+    "details": "Classic Tiramisu",
+    "price": 5.5
+  },
+  {
+    "id": 5,
+    "lgImage": "image-baklava-desktop",
+    "smImage": "image-baklava-mobile",
+    "title": "Baklava",
+    "details": "Pistachio Baklava",
+    "price": 4
+  },
+  {
+    "id": 6,
+    "lgImage": "image-meringue-desktop",
+    "smImage": "image-meringue-mobile",
+    "title": "Pie",
+    "details": "Lemon Meringue Pie",
+    "price": 5
+  },
+  {
+    "id": 7,
+    "lgImage": "image-cake-desktop",
+    "smImage": "image-cake-mobile",
+    "title": "Cake",
+    "details": "Red Velvet Cake",
+    "price": 4.5
+  },
+  {
+    "id": 8,
+    "lgImage": "image-brownie-desktop",
+    "smImage": "image-brownie-mobile",
+    "title": "Brownie",
+    "details": "Salted Caramel Brownie",
+    "price": 5.5
+  },
+  {
+    "id": 9,
+    "lgImage": "image-panna-cotta-desktop",
+    "smImage": "image-panna-cotta-mobile",
+    "title": "Panna Cotta",
+    "details": "Vanilla Panna Cotta",
+    "price": 6.5
+  }
+]
