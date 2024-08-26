@@ -1,11 +1,11 @@
 <div class="w-full group">
   <img [src]="'/assets/images/' + product.lgImage + '.jpg'" alt="{{product.title}}" height="480" width="502"
-       class="w-full rounded-3xl hidden md:block border-2 border-transparent"
-      [ngClass]="cartQuantity > 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
+       class="w-full rounded-3xl hidden md:block border-4 border-border-[#C73B0F]"
+      [ngClass]="cartQuantity !== 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
   />
   <img [src]="'/assets/images/' + product.smImage + '.jpg'" alt="{{product.title}}" height="424" width="654"
-       class="w-full rounded-3xl block md:hidden border-2 border-transparent"
-       [ngClass]="cartQuantity > 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
+       class="w-full rounded-3xl block md:hidden border-4 border-border-[#C73B0F]"
+       [ngClass]="cartQuantity !== 0 ? 'border-[#C73B0F]' : 'bg-transparent'"
   />
   <fieldset class="w-full text-center -mt-6 relative z-10">
 
